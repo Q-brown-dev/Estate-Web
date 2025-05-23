@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Reel Estate</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body  id="Property-body">
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+        </nav>
+        <h1 class="fade-in">Luxury Estates</h1>
+        <button id="darkModeToggle"> Dark mode</button>
+    </header>
+    <!-- Animated Property Search Bar -->
+     <section class="search-bar fade-in">
+        <input type="text"
+        id="search-input" placeholder="Search Properties...">
+        <button onclick="searchProperties ()">Search</button>
+     </section>
+
+     <!-- Animated Slideshow -->
+      <section class="Slideshow fade-in">
+        <img src="images/Elegant living room1.jpg" alt="Elegant living room">
+      </section>
+
+      <!-- Animated Property Listings -->
+       <section class="properties fade-in">
+        <h2>Featured Properties</h2>
+        <div class="property zom-effect" onclick="addToFavorites('modern Villa')">
+            <img src="images/ada7c810-5a85-4bc3-9151-cdfa07f604da.jpg" alt="Luxury Villa">
+            <p>Luxury Villa - $5,000,000
+            <button>  Save</button> </p>
+        </div>
+       </section>
+
+       <!-- Animated Mortgage Calculator -->
+        <section class="mortage fade-in">
+            <h2>Mortgage Calculator</h2>
+            <input type="number" name="" id="downPayment" placeholder="Down Payment">
+            <input type="number" name="" id="LoanTerm"  placeholder="Loan Term (Years)">
+            <input type="number" name="" id="intrestRate " placeholder="Interest Rate">
+           <button onclick="calculateMortage()">Calculate</button>
+           <p id="mortgageResult"></p>
+        </section>
+
+        <!-- Animated Virtual Tour -->
+         <section class="virtual-tour fade-in">
+            <h2>Virtual Tour</h2>
+            <iframe width="100%" height="400" src="https://www.youtube.com/embeded/sample-video" ></iframe>
+         </section>
+
+         <!-- Animated Map-->
+          <section class="map fade-in">
+            <h2>Nearby Landmarks</h2>
+            <iframe src="https://www.google.com/maps/emded?pb=..." width="600" height="450"></iframe>
+          </section>
+
+          <!-- Animated Live Chat -->
+           <a href="htps://wa.me/2348012345678" target="_blank" class="chat-btn">Chat With Us</a>
+
+           <!-- Animated Testimonials -->
+            <section class="testimonials fade-in">
+                <h2>Client Testimonials</h2>
+                <p>"Best experience ever! Highly recommended!" - john Doe</p>
+            </section>
+</body>
+</html>
