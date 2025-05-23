@@ -1,0 +1,157 @@
+body {
+    font-family: Arial,  sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: black;
+}
+
+nav a {22
+    color: gold;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: url('../images/elegant-modern-office-interior-design-with-golden-accents-stunning-city-view_126267-30564.jpg') no-repeat center center/cover;
+    opacity: 0;
+    height: 40vh;
+    transform: translateY(-20px);
+    animation: fadein 1.05s ease-in-out forwards;
+}
+button {
+    background: gold;
+    padding: 12px 24px;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    color: black;
+    box-shadow: 0.4s ease-in-out;
+}
+button:hover{
+    box-shadow: 0px 0px 15px gold;
+}
+
+.properties{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px;
+    animation: fadein 1.5s ease-in-out forwards ;
+}
+
+.property{
+    background: black;
+    padding: 20px;
+    height: 300px;
+    width: 300px;
+    border-radius:10px ;
+    transition: transform 0.4s ease-in-out box-shadow 0.4s ease-in-out;
+    animation: fadein 1.5s ease-in-out forwards ;
+}
+.property img {
+    height: 370px;
+    width: 200px;
+}
+.property:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 15px rgba(225,215,0,0.3);
+}
+img {
+    width: 100;
+}
+.property img{
+    width: 100%;
+    height: 70%;
+    border-radius: 10px;
+}
+/* Properties */
+.dark-mode {
+  background: #222;
+  color: #fff;
+}
+
+/* Fade-in effect */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 1s forwards;
+}
+
+
+
+
+
+
+
+/* Button Hover Effect */
+button {
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+button:hover {
+  background: gold;
+}
+
+/* Property Card Hover Zoom */
+.zoom-effect{
+  transition: transform 0.3s;
+}
+.zoom-effect:hover {
+  transform: scale(1.05s);
+}
+/* Dark Mode smooth Transition */
+#darkModeToggle {
+  transition: background 0.5s, color 0.5s;
+}
+/* Slideshow Animation */
+.Slideshow img{
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  animation: slidFade 5s infinite;
+}
+
+ #Property-body {
+  font-family: Arial, sans-serif;
+  transition: background 0.5s,color 0.5s;
+  /* background-color: aliceblue    ; */
+}
+@keyframes fadeIn {
+ to {
+  opacity: 1;
+  transform: translateY(0);
+ }  
+
+}
+@keyframes slideFade {
+  0% {opacity: 0;  }    
+  20% {opacity: 1;}
+    80%{opacity: 1;}
+  100% {opacity: 0;}
+}
+
+@keyframes fadein {
+ from {
+    opacity: o;
+    transform: translate(-20px);
+ }    
+ to {
+    opacity: 1;
+    transform: translate(0) ;
+    
+ }
+}
